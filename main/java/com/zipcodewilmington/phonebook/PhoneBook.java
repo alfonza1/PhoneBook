@@ -13,7 +13,7 @@ public class PhoneBook {
 
 
     public PhoneBook() {
-        this.phonebook = new HashMap<>();
+        this.phonebook = new LinkedHashMap<>();
     }
 
     public void add(String name, String phoneNumber) {
@@ -78,6 +78,8 @@ public class PhoneBook {
         }
         return contactNames;
     }
+
+
 
 
     public Map<String, List<String>> getMap() {
