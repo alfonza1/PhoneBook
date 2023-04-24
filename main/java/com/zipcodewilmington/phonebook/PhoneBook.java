@@ -13,8 +13,9 @@ public class PhoneBook {
 
 
     public PhoneBook() {
-        this.phonebook = new LinkedHashMap<>();
+        this(new LinkedHashMap<>());
     }
+
 
     public void add(String name, String phoneNumber) {
         List<String> list = new ArrayList<>();
